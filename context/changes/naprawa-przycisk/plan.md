@@ -142,13 +142,13 @@ Brak danych do migracji. Cofnięcie: `bash cofnij.sh` albo cofnięcie commita fa
 
 #### Automated
 
-- [x] 1.1 Pozostałe testy projektu przechodzą bez poprawki
-- [x] 1.2 Faza 1 nie zmienia arkusza stylów ani zamrożonych plików
+- [x] 1.1 Pozostałe testy projektu przechodzą bez poprawki — 20ccd70
+- [x] 1.2 Faza 1 nie zmienia arkusza stylów ani zamrożonych plików — 20ccd70
 
 ### Phase 2: Poprawka szerokości formularza
 
 #### Automated
 
-- [ ] 2.1 Test odtwarzający błąd przechodzi po poprawce
-- [ ] 2.2 Wszystkie testy projektu przechodzą (C1)
-- [ ] 2.3 Zamrożone pliki, treść i skrypt strony bez zmian
+- [x] 2.1 Test odtwarzający błąd przechodzi po poprawce
+- [x] 2.2 Wszystkie testy projektu przechodzą (C1)
+- [x] 2.3 Zamrożone pliki, treść i skrypt strony bez zmian

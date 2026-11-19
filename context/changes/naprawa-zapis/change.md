@@ -1,7 +1,7 @@
 ---
 change_id: naprawa-zapis
 title: Potwierdzenie zapisu na listę
-status: implemented
+status: impl_reviewed
 created: 2026-11-19
 updated: 2026-11-19
 archived_at: null
@@ -57,3 +57,7 @@ archived_at: null
 - F1 — Kryterium 1.2 nie sprawdza, że test jest czerwony, i nie działa po commicie (WARNING, Phase 1 — Success Criteria 1.2): AUTO-FIX (normalne używanie): Kryterium 1.2 kończy się kodem `git stash pop`, więc nie dowodzi, że test był czerwony, a po commicie fazy pada albo rusza cudzy stash. Dzieje się to przy zwykłym przeglądzie kodu i sprawdzeniu zamknięcia. · commit 79eee85
 - F2 — Test tekstu przechodzi także wtedy, gdy strona pokaże literalne `${email}` (WARNING, Phase 1 — zmiana 1 i kryterium 1.3): AUTO-FIX (normalne używanie): Test i `grep -F` w 1.3 przepuszczają zwykły napis z literalnym `${email}`, więc klient zobaczyłby `${email}` zamiast swojego adresu. Łamie to scenariusz człowieka i C1, a to właśnie ta zmiana ma być chroniona testem. · commit 79eee85
 - F3 — Sprawdzenie na żywo `zapis` nie dotyka `zapis.js` (OBSERVATION, Testing Strategy — Integration Tests): AUTO-SKIP (styl): To tylko dopisek w opisie Integration Tests. Plan trafnie opisuje już zakres sprawdzenia na żywo, a uwaga nie dotyczy działania.
+
+### context/changes/naprawa-zapis/reviews/impl-review.md
+
+- brak uwag — nic do triage; zamknięcie: `reviews/impl-review-zamkniecie.md`

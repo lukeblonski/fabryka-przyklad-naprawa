@@ -1,7 +1,7 @@
 ---
 change_id: naprawa-przycisk
 title: Przycisk zapisu na telefonie
-status: implementing
+status: implemented
 created: 2026-11-19
 updated: 2026-11-19
 archived_at: null

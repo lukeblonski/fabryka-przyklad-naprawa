@@ -149,6 +149,6 @@ Brak danych do migracji. Cofnięcie: `bash cofnij.sh` albo cofnięcie commita fa
 
 #### Automated
 
-- [x] 2.1 Test odtwarzający błąd przechodzi po poprawce
-- [x] 2.2 Wszystkie testy projektu przechodzą (C1)
-- [x] 2.3 Zamrożone pliki, treść i skrypt strony bez zmian
+- [x] 2.1 Test odtwarzający błąd przechodzi po poprawce — 2298fb7
+- [x] 2.2 Wszystkie testy projektu przechodzą (C1) — 2298fb7
+- [x] 2.3 Zamrożone pliki, treść i skrypt strony bez zmian — 2298fb7

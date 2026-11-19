@@ -142,8 +142,8 @@ Brak danych do migracji. Cofnięcie: `bash cofnij.sh` albo cofnięcie commita fa
 
 #### Automated
 
-- [ ] 1.1 Pozostałe testy projektu przechodzą bez poprawki
-- [ ] 1.2 Faza 1 nie zmienia arkusza stylów ani zamrożonych plików
+- [x] 1.1 Pozostałe testy projektu przechodzą bez poprawki
+- [x] 1.2 Faza 1 nie zmienia arkusza stylów ani zamrożonych plików
 
 ### Phase 2: Poprawka szerokości formularza
 

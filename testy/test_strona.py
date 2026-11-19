@@ -3,6 +3,7 @@ import tempfile
 import unittest
 
 import serwer
+import sprawdzenie
 import zbuduj
 
 
@@ -28,6 +29,18 @@ class StronaTest(unittest.TestCase):
         self.assertIn("`Zapisane: ${email}. Napiszemy, gdy otworzymy drugi warsztat.`", tekst)
         self.assertNotIn('"Zapisane."', tekst)
         self.assertNotIn("innerHTML", tekst)
+
+    def test_formularz_miesci_sie_na_telefonie(self):
+        katalog = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        with open(os.path.join(katalog, "strona", "styl.css"), encoding="utf-8") as plik:
+            css = plik.read()
+        for selektor, szerokosc in sprawdzenie.szerokosci_formularza(css).items():
+            if szerokosc is not None:
+                self.assertLessEqual(
+                    szerokosc,
+                    sprawdzenie.SZEROKOSC,
+                    f"{selektor} ma {szerokosc} px na ekranie {sprawdzenie.SZEROKOSC} px",
+                )
 
 
 if __name__ == "__main__":

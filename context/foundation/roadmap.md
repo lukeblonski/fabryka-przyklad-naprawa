@@ -19,3 +19,4 @@
 ## Done
 
 - **S-01: Potwierdzenie zapisu na listę** — Archived 2026-11-19 → `context/archive/2026-11-19-naprawa-zapis/`. Lesson: —.
+- **S-02: Przycisk zapisu na telefonie** — Archived 2026-11-19 → `context/archive/2026-11-19-naprawa-przycisk/`. Lesson: —.

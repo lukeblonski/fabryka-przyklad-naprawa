@@ -3,7 +3,7 @@
 | ID   | Change ID         | Status |
 | ---- | ----------------- | ------ |
 | S-01 | naprawa-zapis     | done  |
-| S-02 | naprawa-przycisk  | ready  |
+| S-02 | naprawa-przycisk  | done  |
 
 ### S-01: Potwierdzenie zapisu na listę
 
@@ -13,7 +13,7 @@
 ### S-02: Przycisk zapisu na telefonie
 
 - **Change ID:** naprawa-przycisk
-- **Status:** ready
+- **Status:** done
 - **Zgłoszenie błędu:** na telefonie przycisk zapisu wychodzi poza ekran
 
 ## Done

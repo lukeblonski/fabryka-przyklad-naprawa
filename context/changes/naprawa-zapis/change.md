@@ -61,3 +61,7 @@ archived_at: null
 ### context/changes/naprawa-zapis/reviews/impl-review.md
 
 - brak uwag — nic do triage; zamknięcie: `reviews/impl-review-zamkniecie.md`
+
+## Zatrzymania autopilota
+
+- czas: 2026-11-19 23:00 · krok: przygotowanie-wdrozenia · powód: przyczyna w ustawieniu (sprawdzenie przed publikacją, commit c810293): odpowiedź usługi (krok 1: status 401, treść „{"statusCode":401,"message":"This API key is restricted to only send emails","name":"restricted_api_key"}”); krok 1 (sprawdzenie zapis): polecenie zakończyło się kodem 1; log .autopil… · zrobiono: — · skutek: —

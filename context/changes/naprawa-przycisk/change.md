@@ -1,7 +1,7 @@
 ---
 change_id: naprawa-przycisk
 title: Przycisk zapisu na telefonie
-status: implemented
+status: impl_reviewed
 created: 2026-11-19
 updated: 2026-11-19
 archived_at: null
@@ -48,3 +48,9 @@ archived_at: null
   - Tymczasowe na stałe: nic
   - Odrzucone prostsze warianty: (a) ukrycie formularza na telefonie — klient z telefonu nie może się zapisać; (b) mniejsza czcionka przycisku — przycisk dalej poza ekranem
 - Najbliżej konfliktu: nic.
+
+## Decyzje triage
+
+### context/changes/naprawa-przycisk/reviews/impl-review.md
+
+- brak uwag do triage (0 findings).

@@ -15,3 +15,7 @@
 - **Change ID:** naprawa-przycisk
 - **Status:** ready
 - **Zgłoszenie błędu:** na telefonie przycisk zapisu wychodzi poza ekran
+
+## Done
+
+- **S-01: Potwierdzenie zapisu na listę** — Archived 2026-11-19 → `context/archive/2026-11-19-naprawa-zapis/`. Lesson: —.

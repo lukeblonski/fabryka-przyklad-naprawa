@@ -114,7 +114,7 @@ Brak danych do migracji. Cofnięcie: `bash cofnij.sh` albo cofnięcie jednego co
 
 #### Automated
 
-- [ ] 1.1 Testy projektu przechodzą, w tym nowy test potwierdzenia
-- [ ] 1.2 Nowy test jest czerwony na kodzie sprzed zmiany `zapis.js` i zielony po niej
-- [ ] 1.3 Plik z tekstem zawiera nowe zdanie
-- [ ] 1.4 Zamrożone pliki bez zmian
+- [x] 1.1 Testy projektu przechodzą, w tym nowy test potwierdzenia
+- [x] 1.2 Nowy test jest czerwony na kodzie sprzed zmiany `zapis.js` i zielony po niej
+- [x] 1.3 Plik z tekstem zawiera nowe zdanie
+- [x] 1.4 Zamrożone pliki bez zmian

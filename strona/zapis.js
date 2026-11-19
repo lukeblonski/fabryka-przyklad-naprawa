@@ -9,7 +9,7 @@ document.getElementById("zapis").addEventListener("submit", async (zdarzenie) =>
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email }),
     });
-    wynik.textContent = odpowiedz.ok ? "Zapisane." : "Nie udało się zapisać. Spróbuj później.";
+    wynik.textContent = odpowiedz.ok ? `Zapisane: ${email}. Napiszemy, gdy otworzymy drugi warsztat.` : "Nie udało się zapisać. Spróbuj później.";
   } catch (blad) {
     wynik.textContent = "Nie udało się zapisać. Spróbuj później.";
   }

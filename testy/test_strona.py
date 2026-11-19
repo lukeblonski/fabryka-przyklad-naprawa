@@ -21,6 +21,14 @@ class StronaTest(unittest.TestCase):
             self.assertEqual(status, 400, email)
             self.assertIn("blad", obiekt)
 
+    def test_potwierdzenie_pokazuje_adres(self):
+        katalog = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        with open(os.path.join(katalog, "strona", "zapis.js"), encoding="utf-8") as plik:
+            tekst = plik.read()
+        self.assertIn("`Zapisane: ${email}. Napiszemy, gdy otworzymy drugi warsztat.`", tekst)
+        self.assertNotIn('"Zapisane."', tekst)
+        self.assertNotIn("innerHTML", tekst)
+
 
 if __name__ == "__main__":
     unittest.main()

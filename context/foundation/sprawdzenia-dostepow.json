@@ -1,0 +1,24 @@
+{
+  "dostepy": {
+    "resend": {
+      "host": "api.resend.com",
+      "operacje": [
+        {
+          "nazwa": "dodanie kontaktu do listy nowości",
+          "wywolanie": {
+            "metoda": "POST",
+            "adres": "https://api.resend.com/contacts",
+            "naglowki": {"Authorization": "Bearer {klucz}"},
+            "tresc": {"email": "sprawdzenie-{losowe}@example.com"}
+          },
+          "oczekiwany_status": 201,
+          "sprzatanie": {
+            "metoda": "DELETE",
+            "adres": "https://api.resend.com/contacts/{odpowiedz.id}",
+            "naglowki": {"Authorization": "Bearer {klucz}"}
+          }
+        }
+      ]
+    }
+  }
+}

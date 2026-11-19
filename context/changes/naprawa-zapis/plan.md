@@ -57,7 +57,7 @@ Test pilnujący nowego tekstu i zmiana tekstu sukcesu w skrypcie formularza.
 
 **Intent**: Dodać test, który czyta `strona/zapis.js` i sprawdza, że potwierdzenie zawiera adres i pełne zdanie, że stary tekst „Zapisane.” zniknął z gałęzi sukcesu oraz że wynik nadal jest ustawiany przez `textContent`.
 
-**Contract**: Nowa metoda w `StronaTest` (np. `test_potwierdzenie_pokazuje_adres`); asercje na tekście pliku: obecność `Zapisane: ${email}. Napiszemy, gdy otworzymy drugi warsztat.`, brak `"Zapisane."` jako osobnego napisu, brak `innerHTML`. Plik czytany względem katalogu repozytorium (`os.path` od `__file__` testu), w UTF-8.
+**Contract**: Nowa metoda w `StronaTest` (np. `test_potwierdzenie_pokazuje_adres`); asercje na tekście pliku: obecność zdania razem z apostrofami wstecznymi (otwierający i zamykający są częścią szukanego tekstu, żeby zwykły napis w cudzysłowie z literalnym `${email}` nie przechodził): ```Zapisane: ${email}. Napiszemy, gdy otworzymy drugi warsztat.```, brak `"Zapisane."` jako osobnego napisu, brak `innerHTML`. Plik czytany względem katalogu repozytorium (`os.path` od `__file__` testu), w UTF-8.
 
 #### 2. Tekst potwierdzenia w formularzu
 
@@ -72,8 +72,8 @@ Test pilnujący nowego tekstu i zmiana tekstu sukcesu w skrypcie formularza.
 #### Automated Verification:
 
 - Testy projektu przechodzą, w tym nowy test potwierdzenia: `python3 -m unittest discover -s testy -t .`
-- Nowy test jest czerwony na kodzie sprzed zmiany `zapis.js` i zielony po niej: `git stash push strona/zapis.js && python3 -m unittest discover -s testy -t . ; git stash pop`
-- Plik z tekstem zawiera nowe zdanie: `grep -F 'Zapisane: ${email}. Napiszemy, gdy otworzymy drugi warsztat.' strona/zapis.js`
+- Nowy test jest czerwony na kodzie sprzed zmiany `zapis.js` i zielony po niej (zielony sprawdza punkt wyżej; to polecenie kończy się 0 tylko wtedy, gdy test jest czerwony na starym `zapis.js`, nie dotyka drzewa roboczego i działa przed i po commicie): `t=$(mktemp -d) && cp -r . "$t/k" && git show f395f1f:strona/zapis.js > "$t/k/strona/zapis.js" && ! (cd "$t/k" && python3 -m unittest discover -s testy -t .)`
+- Plik z tekstem zawiera nowe zdanie jako szablon tekstowy, z apostrofami wstecznymi: ``grep -F '`Zapisane: ${email}. Napiszemy, gdy otworzymy drugi warsztat.`' strona/zapis.js``
 - Zamrożone pliki bez zmian: `git diff --exit-code f395f1f -- serwer.py resend.py sprawdzenie.py .github cofnij.sh strona/styl.css strona/index.html`
 
 ---

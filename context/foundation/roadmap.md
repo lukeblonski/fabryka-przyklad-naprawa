@@ -2,13 +2,13 @@
 
 | ID   | Change ID         | Status |
 | ---- | ----------------- | ------ |
-| S-01 | naprawa-zapis     | ready  |
+| S-01 | naprawa-zapis     | done  |
 | S-02 | naprawa-przycisk  | ready  |
 
 ### S-01: Potwierdzenie zapisu na listę
 
 - **Change ID:** naprawa-zapis
-- **Status:** ready
+- **Status:** done
 
 ### S-02: Przycisk zapisu na telefonie
 
